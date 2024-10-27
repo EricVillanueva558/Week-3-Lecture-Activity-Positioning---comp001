@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav, main, aside {
+    width: 30%;
+    padding: 1em;
+    float: left;
+    margin-right: 1%;
+}
+
+nav {
+    background: #f4f4f4;
+}
+
+main {
+    background: #e2e2e2;
+}
+
+aside {
+    background: #ddd;
+}
+
+footer {
+    clear: both;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+/* Ensuring a responsive layout */
+@media screen and (max-width: 768px) {
+    nav, main, aside {
+        width: 100%;
+        float: none;
+    }
+}
